@@ -31,6 +31,7 @@ const dashboard = new ParseDashboard({
     apps:
         [{
             appName: "myApplication",
+            iconName: "parse-icon.png",
             appId: appId,
             masterKey: masterKey,
             serverURL: serverURL + '/parse',
@@ -42,6 +43,7 @@ const dashboard = new ParseDashboard({
             pass: pass,
             apps: [{ appId: appId }]
         }],
+    iconsFolder: "icons",
     trustProxy: 1
 }, {
     allowInsecureHTTP: false
